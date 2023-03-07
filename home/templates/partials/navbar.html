@@ -1,0 +1,54 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'home/main.css'%}">
+<script type="text/javascript" src="{% static 'home/init.js' %}"></script>
+
+ <!-- Barra de navegacion  -->
+ <div class="navbar-fixed">
+  <nav class="nabar-deep" role="navigation">
+    <div class="nav-wrapper">
+      <div class="container">
+        <a id="logo-container" href="#inicio" class="brand-logo">
+          <img class="logo" src="static/portfolio/images/logos.png">
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="link orange-text text-darken-3" href="#inicio">Inicio</a></li>
+          <li><a class="link orange-text text-darken-3" href="#sobremi">Sobre mi</a></li>
+          <li><a class="link orange-text text-darken-3" href="#proyectos">Proyectos</a></li>
+          <li><a class="link orange-text text-darken-3" href="#conocimientos">Conocimientos</a></li>
+          <li><a class="link orange-text text-darken-3" href="#contacto">Contacto</a></li>
+          <li class="nav-item d-flex align-items-center"><a class="btn btn-primary btn-sm btn  waves-effect waves-red" download="slee dw" href="static/portfolio/cv.pdf" target="_blank">Descargar CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<ul id="mobile-demo" class="sidenav sidenav-close black" style="width:200px">
+  <br>
+  <li>
+    <a class="pink-text" href="#inicio">
+    <i class="material-icons icono purple-text">home</i>Inicio
+    </a>
+  </li>
+  <li>
+    <a class="pink-text"  href="#sobremi">
+      <i class="material-icons icono purple-text">work</i>Sobre mi
+    </a>
+  </li>
+  <li>
+    <a class="pink-text"  href="#proyectos">
+      <i class="material-icons icono purple-text">layers</i>Proyectos
+    </a>
+  </li>
+  <li>
+    <a  class="pink-text" href="#conocimientos">
+      <i class="material-icons icono purple-text">perm_media</i>Habilidades
+    </a>
+  </li>
+  <li>
+    <a class="pink-text"  href="#contacto">
+      <i class="material-icons icono purple-text">phone</i>Contacto
+    </a>
+  </li>
+</ul>
