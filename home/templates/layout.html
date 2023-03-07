@@ -1,5 +1,5 @@
 {% load static %}
-<link rel="stylesheet" href="{% static 'home/main.css'%}">
+<link rel="stylesheet" href="{% static 'main.css' %}">
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,29 +9,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CDJ</title>
-  <!-- Compiled and minified CSS -->
-   <!-- Archivo CSS de Materialize -->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Archivo CSS de Materialize -->
-  <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <!-- Archivo CSS personalizado -->
-   <link rel="stylesheet" href="{% static 'home.css' %}">
-   <!-- Compiled and minified CSS -->
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <!-- Archivo CSS Y JS personalizado -->
+    <script src="{% static 'script.js' %}"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <body>
         <!-- navbar  -->
         {% include 'partials/navbar.html' %}
         <!-- contenido -->
+
         <div class="contenido">
             {% block content %}
             {% endblock %}
         </div> 
         <!-- Compiled and minified JavaScript -->
-        <script type="text/javascript">
-        </script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
         <!-- footer  -->
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</script>
 </html>
