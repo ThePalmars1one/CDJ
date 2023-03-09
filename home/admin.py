@@ -10,8 +10,6 @@ class ConsejosAdmin(admin.ModelAdmin):
 class AboutusAdmin(admin.ModelAdmin):
     list_display = ('name','description')
 
-
-
 @admin.register(Collaborators)
 class CollaboratorsAdmin(admin.ModelAdmin):
     list_display = ('name','lastname', 'position')

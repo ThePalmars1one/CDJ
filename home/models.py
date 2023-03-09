@@ -32,6 +32,7 @@ class Collaborators (models.Model):
     position = models.CharField(max_length=100)
     description = models.TextField(max_length=500, blank=True)
     image = ImageField(upload_to="consejos/collaborators")
+    consejo = models.ForeignKey(Consejos,null=True,blank= True, on_delete=models.CASCADE)
 
 class Documents (models.Model):
     title = models.CharField(max_length=100)
