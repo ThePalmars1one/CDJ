@@ -2,6 +2,9 @@ from django.db import models
 from django.db.models.fields.files import ImageField
 from django.contrib.auth.models import User
 
+from .models import User
+
+
 class Consejos(models.Model):
     CONSEJO_CHOICES = [
         ('Local', 'Consejo Local'),
@@ -16,5 +19,4 @@ class Consejos(models.Model):
 
     def __str__(self):
         return self.name
-
 

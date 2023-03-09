@@ -3,3 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var instancessidenav = M.Sidenav.init(elemssidenav);
    });
 
+   $(document).ready(function() {
+    $('.link').click(function() {
+      $('.link').removeClass('active-link');
+      $(this).addClass('active-link');
+    });
+  });
